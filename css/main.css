@@ -49,6 +49,8 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
+  font-family: "Commissioner", sans-serif;
+  font-size: 1rem;
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
@@ -111,7 +113,42 @@ select {
 /*  ==========================================================================
     Author's custom styles - Mobile first design
     ========================================================================== */
+    header {
+      background: url(../images/image-hero-mobile.jpg) center no-repeat;
+      background-size: cover;
+      height: 18.5rem;
+    }
 
+    .primary-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem;
+    }
+
+    .primary-navigation {
+      display: none;
+    }
+
+    .hamburger {
+      display: inline-block;
+    }
+
+    .hamburger,
+    .close-menu {
+      position: absolute;
+      top: 2rem;
+      right: 1.5rem;
+    }
+
+    .close-menu {
+      display: none;
+    }
+
+    .logo {
+      position: absolute;
+      top: 1.8rem;
+    }
 
 
     /* ===================== Media Queries =========================== */
