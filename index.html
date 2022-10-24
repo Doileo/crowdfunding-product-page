@@ -151,135 +151,137 @@
         <!-------------------------
         Selection Modal starts 
       --------------------------->
-        <section class="selection-modal-container">
-          <h2>Back this project</h2>
-          <p>
-            Want to support us in bringing Mastercraft Bamboo Monitor Riser out
-            in the world?
-          </p>
-          <img
-            src="./images/icon-close-modal.svg"
-            id="modal-close"
-            alt="Close icon"
-          />
-
-          <!-- Pledge with no reward -->
-          <div class="pledge-modal-card">
-            <label for="no-reward"
-              >Pledge with no reward
-              <input type="radio" name="item" id="no-reward" />
-              <span class="checkmark"></span>
-            </label>
-            <p>
-              Choose to support us without a reward if you simply believe in our
-              project. As a backer, you will be signed up to receive product
-              updates via email.
+        <section class="selection-modal-container" id="modal">
+          <div class="modal-container flow">
+            <h2>Back this project</h2>
+            <p class="text-gray">
+              Want to support us in bringing Mastercraft Bamboo Monitor Riser
+              out in the world?
             </p>
+            <img
+              src="./images/icon-close-modal.svg"
+              id="modal-close"
+              alt="Close icon"
+            />
 
-            <!-- Selected pledge starts here -->
-            <div class="selected-pledge">
-              <textarea
-                cols="30"
-                rows="10"
-                placeholder="Enter your pledge"
-              ></textarea>
-              <div class="amount-input">
-                <span>$</span>
-                <input type="text" value="10" />
+            <!-- Pledge with no reward -->
+            <div class="pledge-modal-card flow">
+              <label for="no-reward"
+                >Pledge with no reward
+                <input type="radio" name="item" id="no-reward" />
+                <span class="checkmark"></span>
+              </label>
+              <p class="text-gray">
+                Choose to support us without a reward if you simply believe in
+                our project. As a backer, you will be signed up to receive
+                product updates via email.
+              </p>
+
+              <!-- Selected pledge starts here -->
+              <div class="selected-pledge">
+                <textarea
+                  cols="30"
+                  rows="10"
+                  placeholder="Enter your pledge"
+                ></textarea>
+                <div class="amount-input">
+                  <span>$</span>
+                  <input type="text" value="10" />
+                </div>
+                <button class="continue-btn">Continue</button>
               </div>
-              <button class="continue-btn">Continue</button>
+              <!-- Selected pledge ends here -->
             </div>
-            <!-- Selected pledge ends here -->
-          </div>
 
-          <div class="second-pledge-modal-card">
-            <label for="bamboo-stand"
-              >Bamboo Stand
-              <input type="radio" name="item" id="bamboo-stand" />
-              <span class="checkmark"></span>
-            </label>
-            <p>Pledge $25 or more</p>
-            <p>101<span>left</span></p>
-            <p>
-              You get an ergonomic stand made of natural bamboo. You've helped
-              us launch our promotional campaign, and you’ll be added to a
-              special Backer member list.
-            </p>
+            <div class="second-pledge-modal-card flow">
+              <label for="bamboo-stand"
+                >Bamboo Stand
+                <input type="radio" name="item" id="bamboo-stand" />
+                <span class="checkmark"></span>
+              </label>
+              <p class="text-moderate-cyan">Pledge $25 or more</p>
+              <p>101<span>left</span></p>
+              <p>
+                You get an ergonomic stand made of natural bamboo. You've helped
+                us launch our promotional campaign, and you’ll be added to a
+                special Backer member list.
+              </p>
 
-            <!-- Selected pledge starts here -->
-            <div class="selected-pledge">
-              <textarea
-                cols="30"
-                rows="10"
-                placeholder="Enter your pledge"
-              ></textarea>
-              <div class="amount-input">
-                <span>$</span>
-                <input type="text" value="25" />
+              <!-- Selected pledge starts here -->
+              <div class="selected-pledge">
+                <textarea
+                  cols="30"
+                  rows="10"
+                  placeholder="Enter your pledge"
+                ></textarea>
+                <div class="amount-input">
+                  <span>$</span>
+                  <input type="text" value="25" />
+                </div>
+                <button class="continue-btn">Continue</button>
               </div>
-              <button class="continue-btn">Continue</button>
+              <!-- Selected pledge ends here -->
             </div>
-            <!-- Selected pledge ends here -->
-          </div>
 
-          <div class="third-pledge-modal-card">
-            <label for="black-edition"
-              >Black Edition Stand
-              <input type="radio" name="item" id="black-edition" />
-              <span class="checkmark"></span>
-            </label>
-            <p>Pledge $75 or more</p>
-            <p>64<span>left</span></p>
-            <p>
-              You get a Black Special Edition computer stand and a personal
-              thank you. You’ll be added to our Backer member list. Shipping is
-              included.
-            </p>
+            <div class="third-pledge-modal-card">
+              <label for="black-edition"
+                >Black Edition Stand
+                <input type="radio" name="item" id="black-edition" />
+                <span class="checkmark"></span>
+              </label>
+              <p>Pledge $75 or more</p>
+              <p>64<span>left</span></p>
+              <p>
+                You get a Black Special Edition computer stand and a personal
+                thank you. You’ll be added to our Backer member list. Shipping
+                is included.
+              </p>
 
-            <!-- Selected pledge starts here -->
-            <div class="selected-pledge">
-              <textarea
-                cols="30"
-                rows="10"
-                placeholder="Enter your pledge"
-              ></textarea>
-              <div class="amount-input">
-                <span>$</span>
-                <input type="text" value="75" />
+              <!-- Selected pledge starts here -->
+              <div class="selected-pledge">
+                <textarea
+                  cols="30"
+                  rows="10"
+                  placeholder="Enter your pledge"
+                ></textarea>
+                <div class="amount-input">
+                  <span>$</span>
+                  <input type="text" value="75" />
+                </div>
+                <button class="continue-btn">Continue</button>
               </div>
-              <button class="continue-btn">Continue</button>
+              <!-- Selected pledge ends here -->
             </div>
-            <!-- Selected pledge ends here -->
-          </div>
 
-          <div class="fourth-pledge-modal-card">
-            <label for="mahogany-special"
-              >Mahogany Special Edition
-              <input type="radio" name="item" id="mahogany=special" />
-              <span class="checkmark"></span>
-            </label>
-            <p>Pledge $200 or more</p>
-            <p>0<span>left</span></p>
-            <p>
-              You get two Special Edition Mahogany stands, a Backer T-Shirt, and
-              a personal thank you. You’ll be added to our Backer member list.
-              Shipping is included.
-            </p>
+            <div class="fourth-pledge-modal-card">
+              <label for="mahogany-special"
+                >Mahogany Special Edition
+                <input type="radio" name="item" id="mahogany=special" />
+                <span class="checkmark"></span>
+              </label>
+              <p>Pledge $200 or more</p>
+              <p>0<span>left</span></p>
+              <p>
+                You get two Special Edition Mahogany stands, a Backer T-Shirt,
+                and a personal thank you. You’ll be added to our Backer member
+                list. Shipping is included.
+              </p>
 
-            <!-- Selected pledge starts here -->
-            <div class="selected-pledge">
-              <textarea
-                cols="30"
-                rows="10"
-                placeholder="Enter your pledge"
-              ></textarea>
-              <div class="amount-input">
-                <span>$</span>
-                <input type="text" value="200" />
+              <!-- Selected pledge starts here -->
+              <div class="selected-pledge">
+                <textarea
+                  cols="30"
+                  rows="10"
+                  placeholder="Enter your pledge"
+                ></textarea>
+                <div class="amount-input">
+                  <span>$</span>
+                  <input type="text" value="200" />
+                </div>
+                <button class="continue-btn">Continue</button>
               </div>
-              <button class="continue-btn">Continue</button>
+              <!-- Selected pledge ends here -->
             </div>
-            <!-- Selected pledge ends here -->
           </div>
         </section>
         <!-- Selection Modal ends -->

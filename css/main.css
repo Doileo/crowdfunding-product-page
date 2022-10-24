@@ -319,6 +319,82 @@ select {
       background-color: rgb(118, 115, 115);
     }
 
+    /* Selection modal container */
+    .selection-modal-container {
+      display: block;
+      background-color: rgba(0, 0, 0, 0.4);
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      overflow: auto;
+    }
+
+    .modal-container {
+      width: 85%;
+      background-color: #fff;
+      position: absolute;
+      top: 10rem;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 750px;
+      border: 1px solid #e9e4e4;
+      border-radius: 1rem;
+      padding-inline: 1.5rem;
+    }
+
+    .modal-container img {
+      position: absolute;
+      top: 1rem;
+      right: 7%;
+    }
+
+    .modal-container h2 {
+      margin-top: 2rem;
+      font-size: 1.125rem;
+    }
+
+    .modal-container p {
+      font-size: 0.85rem;
+      line-height: 1.5rem;
+    }
+
+    .pledge-modal-card,
+    .second-pledge-modal-card {
+      border: 1px solid rgba(0, 0, 0, 0.14);
+      border-radius: 0.5rem;
+      padding: 1.5rem;
+    }
+
+    .pledge-modal-card label,
+    .second-pledge-modal-card label {
+      font-size: 0.85rem;
+      font-weight: 700;
+      padding-left: 2.5rem;
+      user-select: none;
+    }
+
+    .pledge-modal-card input[type="radio"],
+    .second-pledge-modal-card input[type="radio"] {
+      opacity: 0;
+    }
+
+    .pledge-modal-card .checkmark,
+    .second-pledge-modal-card .checkmark {
+      position: absolute;
+      width: 1.5rem;
+      height: 1.5rem;
+      left: 3rem;
+      border: 1px solid rgba(0, 0, 0, 0.14);
+      border-radius: 50%;
+      margin-top: 0.2rem;
+    }
+
+    .selected-pledge {
+      display: none;
+    }
+
 
 
 
