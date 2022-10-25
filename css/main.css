@@ -361,14 +361,18 @@ select {
     }
 
     .pledge-modal-card,
-    .second-pledge-modal-card {
+    .second-pledge-modal-card,
+    .third-pledge-modal-card,
+    .fourth-pledge-modal-card {
       border: 1px solid rgba(0, 0, 0, 0.14);
       border-radius: 0.5rem;
       padding: 1.5rem;
     }
 
     .pledge-modal-card label,
-    .second-pledge-modal-card label {
+    .second-pledge-modal-card label,
+    .third-pledge-modal-card label,
+    .fourth-pledge-modal-card label {
       font-size: 0.85rem;
       font-weight: 700;
       padding-left: 2.5rem;
@@ -376,12 +380,16 @@ select {
     }
 
     .pledge-modal-card input[type="radio"],
-    .second-pledge-modal-card input[type="radio"] {
+    .second-pledge-modal-card input[type="radio"],
+    .third-pledge-modal-card input[type="radio"],
+    .fourth-pledge-modal-card input[type="radio"] {
       opacity: 0;
     }
 
     .pledge-modal-card .checkmark,
-    .second-pledge-modal-card .checkmark {
+    .second-pledge-modal-card .checkmark,
+    .third-pledge-modal-card .checkmark,
+    .fourth-pledge-modal-card .checkmark {
       position: absolute;
       width: 1.5rem;
       height: 1.5rem;
@@ -393,6 +401,28 @@ select {
 
     .selected-pledge {
       display: none;
+    }
+
+    .second-pledge-modal-card p.text-moderate-cyan,
+    .third-pledge-modal-card p.text-moderate-cyan,
+    .fourth-pledge-modal-card p.text-moderate-cyan {
+      font-weight: 500;
+      padding-left: 2.5rem;
+      margin-top: 0.5rem;
+    }
+
+    p.remained-amount {
+      font-weight: 700;
+      font-size: 1.125rem;
+    }
+
+    .remained-amount span {
+      font-weight: normal;
+      padding-left: 0.5rem;
+    }
+
+    .fourth-pledge-modal-card {
+      opacity: 0.5;
     }
 
 
