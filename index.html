@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- displays site properly based on user's device -->
     <title>Frontend Mentor | Crowdfunding product page</title>
 
@@ -11,23 +11,23 @@
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
-    />
+    >
     <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap"
       rel="stylesheet"
-    />
+    >
 
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/main.css">
   </head>
 
   <body>
     <header class="primary-header">
       <a href="#" aria-label="logo"
         ><img src="./images/logo.svg" class="logo" alt="Logo"
-      /></a>
+      ></a>
 
       <nav>
         <ul class="primary-navigation">
@@ -41,27 +41,27 @@
             src="./images/icon-hamburger.svg"
             class="open-menu"
             alt="hamburger menu open"
-          />
+          >
         </div>
         <div class="close-menu" id="close-menu">
           <img
             src="./images/icon-close-menu.svg"
             class="close-menu"
             alt="menu close"
-          />
+          >
         </div>
       </nav>
     </header>
 
     <main>
-      <section class="main-container flow">
-        <section class="description-container">
+      <h1 class="text-black">Mastercraft Bamboo Monitor Riser</h1>
+      <div class="main-container flow">
+        <div class="description-container">
           <img
             src="./images/logo-mastercraft.svg"
             class="mastercraft-logo"
             alt="Logo"
-          />
-          <h1 class="text-black">Mastercraft Bamboo Monitor Riser</h1>
+          >
           <p class="text-gray">
             A beautiful & handcrafted monitor stand to reduce neck and eye
             strain.
@@ -78,10 +78,10 @@
               <span>Bookmark</span>
             </button>
           </div>
-        </section>
+        </div>
         <!-- description-container ends here-->
 
-        <section class="info-container">
+        <div class="info-container">
           <p id="price-description">$89,914</p>
           <p class="additional-info text-gray">of $100,000 backed</p>
 
@@ -93,10 +93,10 @@
           <div class="bar-wrapper">
             <div class="green-bar" id="green-bar"></div>
           </div>
-        </section>
+        </div>
         <!-- info-container ends here-->
 
-        <section id="about" class="about-container flow">
+        <div id="about" class="about-container flow">
           <h2 class="text-black">About this project</h2>
           <p class="text-gray">
             The Mastercraft Bamboo Monitor Riser is a sturdy and stylish
@@ -145,12 +145,10 @@
             <p class="number">0<span class="text-gray">left</span></p>
             <button class="select-btn">Out of stock</button>
           </div>
-        </section>
+        </div>
         <!-- about-container ends here-->
 
-        <!-------------------------
-        Selection Modal starts 
-      --------------------------->
+        <!-- Selection Modal starts -->
         <section class="selection-modal-container" id="modal">
           <div class="modal-container flow">
             <h2>Back this project</h2>
@@ -162,13 +160,13 @@
               src="./images/icon-close-modal.svg"
               id="modal-close"
               alt="Close icon"
-            />
+            >
 
             <!-- Pledge with no reward -->
             <div class="pledge-modal-card flow">
               <label for="no-reward"
                 >Pledge with no reward
-                <input type="radio" name="item" id="no-reward" />
+                <input type="radio" name="item" id="no-reward">
                 <span class="checkmark"></span>
               </label>
               <p class="text-gray">
@@ -186,7 +184,7 @@
                 ></textarea>
                 <div class="amount-input">
                   <span>$</span>
-                  <input type="text" value="10" />
+                  <input type="text" value="10">
                 </div>
                 <button class="continue-btn">Continue</button>
               </div>
@@ -196,7 +194,7 @@
             <div class="second-pledge-modal-card flow">
               <label for="bamboo-stand"
                 >Bamboo Stand
-                <input type="radio" name="item" id="bamboo-stand" />
+                <input type="radio" name="item" id="bamboo-stand">
                 <span class="checkmark"></span>
               </label>
               <p class="text-moderate-cyan">Pledge $25 or more</p>
@@ -216,7 +214,7 @@
                 ></textarea>
                 <div class="amount-input">
                   <span>$</span>
-                  <input type="text" value="25" />
+                  <input type="text" value="25">
                 </div>
                 <button class="continue-btn">Continue</button>
               </div>
@@ -226,7 +224,7 @@
             <div class="third-pledge-modal-card flow">
               <label for="black-edition"
                 >Black Edition Stand
-                <input type="radio" name="item" id="black-edition" />
+                <input type="radio" name="item" id="black-edition">
                 <span class="checkmark"></span>
               </label>
               <p class="text-moderate-cyan">Pledge $75 or more</p>
@@ -246,7 +244,7 @@
                 ></textarea>
                 <div class="amount-input">
                   <span>$</span>
-                  <input type="text" value="75" />
+                  <input type="text" value="75">
                 </div>
                 <button class="continue-btn">Continue</button>
               </div>
@@ -254,9 +252,9 @@
             </div>
 
             <div class="fourth-pledge-modal-card flow">
-              <label for="mahogany-special"
+              <label for="mahogany-special-edition"
                 >Mahogany Special Edition
-                <input type="radio" name="item" id="mahogany=special" />
+                <input type="radio" name="item" id="mahogany-special-edition">
                 <span class="checkmark"></span>
               </label>
               <p class="text-moderate-cyan">Pledge $200 or more</p>
@@ -276,7 +274,7 @@
                 ></textarea>
                 <div class="amount-input">
                   <span>$</span>
-                  <input type="text" value="200" />
+                  <input type="text" value="200">
                 </div>
                 <button class="continue-btn">Continue</button>
               </div>
@@ -289,7 +287,7 @@
         <!-- Success modal starts -->
         <section class="success" id="success">
           <div class="success-container">
-            <img src="./images/icon-check.svg" alt="Check Icon" />
+            <img src="./images/icon-check.svg" alt="Check Icon">
             <h2>Thanks for your support!</h2>
             <p>
               Your pledge brings us one step closer to sharing Mastercraft
@@ -300,7 +298,7 @@
           </div>
         </section>
         <!-- Success modal ends here -->
-      </section>
+      </div>
     </main>
 
     <footer>
