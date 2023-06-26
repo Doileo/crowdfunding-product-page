@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
     <title>Frontend Mentor | Crowdfunding product page</title>
 
@@ -11,47 +11,65 @@
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
-    >
+    />
     <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap"
       rel="stylesheet"
-    >
+    />
 
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css" />
   </head>
 
   <body>
+    <!-- The header contains the logo and navigation -->
     <header class="primary-header">
-      <a href="#" aria-label="logo"
-        ><img src="./images/logo.svg" class="logo" alt="Logo"
-      ></a>
+      <a href="#" aria-label="logo">
+        <img src="./images/logo.svg" class="logo" alt="Logo" />
+      </a>
 
+      <!-- The navigation menu is initially hidden on mobile devices -->
       <nav>
+        <!-- The primary navigation for larger screens -->
         <ul class="primary-navigation">
           <li class="navigation-link"><a href="#">About</a></li>
           <li class="navigation-link"><a href="#">Discover</a></li>
           <li class="navigation-link"><a href="#">Get Started</a></li>
         </ul>
 
+        <!-- The hamburger icon for opening the mobile menu -->
         <div class="hamburger" id="hamburger">
           <img
             src="./images/icon-hamburger.svg"
             class="open-menu"
             alt="hamburger menu open"
-          >
+          />
         </div>
+
+        <!-- The close icon for closing the mobile menu -->
         <div class="close-menu" id="close-menu">
           <img
             src="./images/icon-close-menu.svg"
             class="close-menu"
             alt="menu close"
-          >
+          />
         </div>
       </nav>
     </header>
+
+    <!-- The mobile menu appears as a modal overlay -->
+    <div class="modal-bg" id="modal-bg">
+      <div class="mobile-menu" id="mobile-menu">
+        <ul>
+          <!-- Mobile-friendly navigation options -->
+          <li><a href="#">About</a></li>
+          <li><a href="#">Discover</a></li>
+          <li><a href="#">Get Started</a></li>
+        </ul>
+      </div>
+    </div>
 
     <main>
       <div class="main-container flow">
@@ -60,7 +78,7 @@
             src="./images/logo-mastercraft.svg"
             class="mastercraft-logo"
             alt="Logo"
-          >
+          />
           <h1 class="text-black">Mastercraft Bamboo Monitor Riser</h1>
           <p class="text-gray">
             A beautiful & handcrafted monitor stand to reduce neck and eye
@@ -160,13 +178,13 @@
               src="./images/icon-close-modal.svg"
               id="modal-close"
               alt="Close icon"
-            >
+            />
 
             <!-- Pledge with no reward -->
             <div class="pledge-modal-card flow">
               <label for="no-reward"
                 >Pledge with no reward
-                <input type="radio" name="item" id="no-reward">
+                <input type="radio" name="item" id="no-reward" />
                 <span class="checkmark"></span>
               </label>
               <p class="text-gray">
@@ -184,7 +202,7 @@
                 ></textarea>
                 <div class="amount-input">
                   <span>$</span>
-                  <input type="text" value="10">
+                  <input type="text" value="10" />
                 </div>
                 <button class="continue-btn">Continue</button>
               </div>
@@ -194,7 +212,7 @@
             <div class="second-pledge-modal-card flow">
               <label for="bamboo-stand"
                 >Bamboo Stand
-                <input type="radio" name="item" id="bamboo-stand">
+                <input type="radio" name="item" id="bamboo-stand" />
                 <span class="checkmark"></span>
               </label>
               <p class="text-moderate-cyan">Pledge $25 or more</p>
@@ -203,7 +221,9 @@
                 us launch our promotional campaign, and you’ll be added to a
                 special Backer member list.
               </p>
-              <p class="remained-amount">101<span class="text-gray">left</span></p>
+              <p class="remained-amount">
+                101<span class="text-gray">left</span>
+              </p>
 
               <!-- Selected pledge starts here -->
               <div class="selected-pledge">
@@ -214,7 +234,7 @@
                 ></textarea>
                 <div class="amount-input">
                   <span>$</span>
-                  <input type="text" value="25">
+                  <input type="text" value="25" />
                 </div>
                 <button class="continue-btn">Continue</button>
               </div>
@@ -224,7 +244,7 @@
             <div class="third-pledge-modal-card flow">
               <label for="black-edition"
                 >Black Edition Stand
-                <input type="radio" name="item" id="black-edition">
+                <input type="radio" name="item" id="black-edition" />
                 <span class="checkmark"></span>
               </label>
               <p class="text-moderate-cyan">Pledge $75 or more</p>
@@ -233,7 +253,9 @@
                 thank you. You’ll be added to our Backer member list. Shipping
                 is included.
               </p>
-              <p class="remained-amount">64<span class="text-gray">left</span></p>
+              <p class="remained-amount">
+                64<span class="text-gray">left</span>
+              </p>
 
               <!-- Selected pledge starts here -->
               <div class="selected-pledge">
@@ -244,7 +266,7 @@
                 ></textarea>
                 <div class="amount-input">
                   <span>$</span>
-                  <input type="text" value="75">
+                  <input type="text" value="75" />
                 </div>
                 <button class="continue-btn">Continue</button>
               </div>
@@ -254,7 +276,7 @@
             <div class="fourth-pledge-modal-card flow">
               <label for="mahogany-special-edition"
                 >Mahogany Special Edition
-                <input type="radio" name="item" id="mahogany-special-edition">
+                <input type="radio" name="item" id="mahogany-special-edition" />
                 <span class="checkmark"></span>
               </label>
               <p class="text-moderate-cyan">Pledge $200 or more</p>
@@ -263,7 +285,9 @@
                 and a personal thank you. You’ll be added to our Backer member
                 list. Shipping is included.
               </p>
-              <p class="remained-amount">0<span class="text-gray">left</span></p>
+              <p class="remained-amount">
+                0<span class="text-gray">left</span>
+              </p>
 
               <!-- Selected pledge starts here -->
               <div class="selected-pledge">
@@ -274,7 +298,7 @@
                 ></textarea>
                 <div class="amount-input">
                   <span>$</span>
-                  <input type="text" value="200">
+                  <input type="text" value="200" />
                 </div>
                 <button class="continue-btn">Continue</button>
               </div>
@@ -287,7 +311,7 @@
         <!-- Success modal starts -->
         <section class="success" id="success">
           <div class="success-container">
-            <img src="./images/icon-check.svg" alt="Check Icon">
+            <img src="./images/icon-check.svg" alt="Check Icon" />
             <h2>Thanks for your support!</h2>
             <p class="text-gray">
               Your pledge brings us one step closer to sharing Mastercraft
@@ -306,12 +330,13 @@
         Challenge by
         <a href="https://www.frontendmentor.io/home" target="_blank"
           >Frontend Mentor</a
-        > Coded by
+        >
+        Coded by
         <a
           href="https://www.linkedin.com/in/doinaleovchindeveloper/"
           target="_blank"
           >Doina</a
-        >.
+        >
       </div>
     </footer>
   </body>
