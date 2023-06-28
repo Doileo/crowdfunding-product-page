@@ -163,16 +163,14 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, black 0%, rgba(0, 0, 0, 0) 100%);
-  opacity: 0.6;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
   z-index: 999;
 }
 
-/* Need to fix the transparency*/
 .mobile-menu {
   display: none;
   position: fixed;
-  top: 50%;
+  top: 23%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 327px;
@@ -196,7 +194,18 @@ header {
 
 .mobile-menu a {
   color: black;
+  font-weight: 500;
   text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.mobile-menu li a:hover {
+  color: #817e7e;
+}
+
+.mobile-menu .stroke { 
+  background: #2F2F2F;
+  opacity: 0.10;
 }
 
 main {
