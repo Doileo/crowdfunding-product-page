@@ -492,26 +492,32 @@ p.remained-amount {
   display: none;
 }
 
+.success {
+  top: -30px;
+}
+
 .success-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 40vh;
-  padding-inline: 1.5rem;
-  background: #fff;
-  border: 0.5px #e9e4e4 solid;
-  border-radius: 1rem;
 }
 
 .success-container {
-  position: absolute;
-  top: 230px;
-  margin-inline: 24px;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 327px;
+  height: 50%;
+  background: #fff;
+  border: 0.50px solid rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  padding: 20px;
 }
 
 .success-container img {
-  margin-top: -32px;
+  margin-top: -5px;
 }
 
 .success-container h2,
