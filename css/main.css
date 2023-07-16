@@ -620,4 +620,54 @@ p.remained-amount {
     top: -1.7rem;
     right: 45%;
   }
+
+  h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+  }
+
+  .description-container p {
+    font-size: 1rem;
+    margin-bottom: 40px;
+  }
+
+  .buttons-container {
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+    position: relative;
+    margin-bottom: 48px;
+  }
+
+  .back-btn {
+    position: relative;
+    right: 85px;
+  }
+
+  .bookmark-btn {
+    position: relative;
+    right: 1px;
+  }
+
+  .bookmark-btn svg {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+
+  .bookmark-btn span {
+    position: relative;
+    right: 25px;
+    display: inline-block;
+    width: 174px;
+    height: 56px;
+    background: #dbd2d2;
+    border-radius: 33.75px;
+    color: #7A7A7A;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 17px 24px 19px 72px;
+  }
 }
