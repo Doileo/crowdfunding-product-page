@@ -600,6 +600,12 @@ p.remained-amount {
     display: none;
   }
 
+  .description-container,
+  .info-container,
+  .about-container {
+    padding-inline: 3rem;
+  }
+
   .description-container img {
     position: absolute;
     top: -1.7rem;
@@ -654,5 +660,32 @@ p.remained-amount {
     font-size: 1rem;
     font-weight: 700;
     padding: 17px 24px 19px 72px;
+  }
+
+  .row {
+    display: flex;
+    margin-left: 5px;
+  }
+
+  .description {
+    flex: 1;
+    border-right: 1px solid rgba(0, 0, 0, 0.15);
+    margin: 0 47px 40px 0;
+    padding-right: 43px;
+  }
+
+  .description:last-child {
+    border-right: none;
+  }
+
+  #number-description,
+  .days-description {
+    border: none;
+    padding-top: 0;
+    margin-inline: 0;
+  }
+
+  .bar-wrapper {
+    margin: 0 0 0 5px;
   }
 }
