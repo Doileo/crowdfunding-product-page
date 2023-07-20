@@ -257,7 +257,7 @@ h1 {
 .back-btn {
   border: none;
   border-radius: 2rem;
-  background-color: hsl(var(--clr-moderate-cyan));
+  background-color: hsl(var(--clr-dark-cyan));
   color: #fff;
   font-weight: 500;
   padding: 1rem 0.9rem;
@@ -359,7 +359,7 @@ span.text-gray {
 }
 
 .select-btn {
-  background-color: hsl(var(--clr-moderate-cyan));
+  background-color: hsl(var(--clr-dark-cyan));
   border: none;
   border-radius: 2rem;
   color: #fff;
@@ -537,7 +537,7 @@ p.remained-amount {
 .success-container button {
   width: 107px;
   height: 48px;
-  background: #3cb3ab;
+  background: hsl(var(--clr-dark-cyan));
   border: none;
   border-radius: 33.5px;
   font-size: 0.875rem;
@@ -633,6 +633,11 @@ p.remained-amount {
   .back-btn {
     position: relative;
     right: 85px;
+    font-weight: 700;
+  }
+
+  .back-btn:hover {
+    background:#174744;
   }
 
   .bookmark-btn {
@@ -687,5 +692,63 @@ p.remained-amount {
 
   .bar-wrapper {
     margin: 0 0 0 5px;
+  }
+
+  .about-container h2 {
+    font-size: 1.25rem;
+  }
+
+  .about-container p,
+  .amount {
+    font-size: 1rem;
+    line-height: 30px;
+  }
+
+  .first-plan,
+  .second-plan,
+  .third-plan {
+    padding-inline: 2rem;
+  }
+
+  .row-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+  }
+
+  .title-option {
+    font-size: 1.125rem;
+  }
+
+  .amount {
+    font-weight: 500;
+    margin: 1.3rem 0 0 0;
+  }
+
+  p.number {
+    font-size: 2rem;
+  }
+
+  .select-btn {
+    font-size: 0.875rem;
+  }
+
+  .select-btn:hover {
+    background: #174744;
+  }
+
+  .attribution {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    height: 60px;
+    font-weight: 500;
+  }
+
+  .attribution a {
+    color: hsl(var(--clr-dark-cyan));
   }
 }
