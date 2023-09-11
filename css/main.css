@@ -539,10 +539,6 @@ p.remained-amount {
 }
 
 .success {
-  display: none;
-}
-
-.success {
   top: -30px;
 }
 
@@ -559,7 +555,7 @@ p.remained-amount {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 327px;
-  height: 50%;
+  height: 60%;
   background: #fff;
   border: 0.50px solid rgba(0, 0, 0, 0.05);
   border-radius: 8px;
@@ -567,12 +563,12 @@ p.remained-amount {
 }
 
 .success-container img {
-  margin-top: -5px;
+  margin-top: 5px;
 }
 
 .success-container h2,
 .success-container p {
-  margin-top: 16px;
+  margin-top: 24px;
 }
 
 .success-container h2 {
@@ -591,7 +587,13 @@ p.remained-amount {
   border: none;
   border-radius: 33.5px;
   font-size: 0.875rem;
+  font-weight: 700;
   color: #fff;
+  margin-bottom: 10px;
+}
+
+.success {
+  display: none;
 }
 
 .attribution {
