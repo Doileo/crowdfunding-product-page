@@ -832,6 +832,31 @@ p.remained-amount {
     left: 580px;
   }
 
+  .success-container {
+    width: 540px;
+  }
+
+  .success-container img {
+    width: 15%;
+  }
+
+  .success-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .success-container p {
+    padding-inline: 30px;
+    line-height: 30px;
+  }
+
+  .success-container button {
+    cursor: pointer;
+  }
+
+  .success-container button:hover {
+    background:#174744;
+  }
+
   .attribution {
     display: flex;
     flex-direction: row;
