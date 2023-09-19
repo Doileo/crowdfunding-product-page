@@ -1,7 +1,7 @@
 "use strict";
 /* 
 1. Make a selection of which pledge to make:
-- Add event listeners to the "Select reward" buttons in your pledge options.
+- Add event listeners to the "Select reward" buttons in the pledge options.
 - When a button is clicked, open the selection modal with the corresponding pledge details.
 
 2. See an updated progress bar and total money raised based on their pledge total after confirming a pledge:
@@ -21,3 +21,19 @@
 - Add an event listener for closing the mobile menu
 - Add an Event listener for clicking outside the mobile menu to close it
 */
+
+document.addEventListener("DOMContentLoaded", function () {
+    //Variables to track total money raised and total backers
+    let totalMoneyRaised = 0; // Initial value
+    let totalBackers = 0; // Initial value
+
+    //Event listener for the "Select reward" button
+    const selectButtons = document.querySelectorAll(".select-btn");
+    selectButtons.forEach((button) => {
+        button.addEventListener("click", function ()  {
+            //Show the selection modal for the corresponding pledge
+            const pledgeModal = document.querySelector(".selection-modal-container");
+            pledgeModal.style.display = "block";
+        });
+    });
+})
