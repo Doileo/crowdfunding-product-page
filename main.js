@@ -1,39 +1,50 @@
 "use strict";
-/* 
-1. Make a selection of which pledge to make:
-- Add event listeners to the "Select reward" buttons in the pledge options.
-- When a button is clicked, open the selection modal with the corresponding pledge details.
 
-2. See an updated progress bar and total money raised based on their pledge total after confirming a pledge:
-- Create variables to track the total money raised and the number of backers.
-- Update these variables when a pledge is confirmed.
-- Update the progress bar based on the total money raised.
+// Get references to the mobile menu, hamburger icon, close icon and log
+const mobileMenu = document.getElementById('mobile-menu');
+const hamburgerIcon = document.getElementById('hamburger');
+const openMenuIcon = document.querySelector('.open-menu');
+const closeMenuIcon = document.querySelector('.close-menu-icon');
+const modalBg = document.getElementById('modal-bg');
+const logo = document.querySelector('.logo')
 
-3. See the number of total backers increment by one after confirming a pledge:
-- Increment the number of backers when a pledge is confirmed.
-- Toggle whether or not the product is bookmarked:
+// Function to open the mobile menu
+function openMobileMenu() {
+    mobileMenu.style.display = 'block';
+    modalBg.style.display = 'block';
 
-4. Add an event listener to the "Bookmark" button.
-- Toggle the bookmark state when the button is clicked.
+    // Toggle the display property between open and close icons
+    openMenuIcon.style.display = 'none';
+    closeMenuIcon.style.display = 'block';
 
-5. Make the hamburger menu work:
-- Add an event listener for opening the mobile menu
-- Add an event listener for closing the mobile menu
-- Add an Event listener for clicking outside the mobile menu to close it
-*/
+    logo.style.zIndex = '1000';
+    closeMenuIcon.style.zIndex = '1000';
+}
 
-document.addEventListener("DOMContentLoaded", function () {
-    //Variables to track total money raised and total backers
-    let totalMoneyRaised = 0; // Initial value
-    let totalBackers = 0; // Initial value
+// Function to close the mobile menu
+function closeMobileMenu() {
+    mobileMenu.style.display = 'none';
+    modalBg.style.display = 'none';
 
-    //Event listener for the "Select reward" button
-    const selectButtons = document.querySelectorAll(".select-btn");
-    selectButtons.forEach((button) => {
-        button.addEventListener("click", function ()  {
-            //Show the selection modal for the corresponding pledge
-            const pledgeModal = document.querySelector(".selection-modal-container");
-            pledgeModal.style.display = "block";
-        });
-    });
-})
+    // Toggle the display property between open and close icons
+    openMenuIcon.style.display = 'block';
+    closeMenuIcon.style.display = 'none';
+
+    // Reset the logo and close icon appearance
+    logo.style.zIndex = 'auto';
+    hamburgerIcon.style.display = 'block';
+}
+
+// Initially show the hamburger icon and hide the close icon
+closeMenuIcon.style.display = 'none';
+
+// Event listener for clicking the hamburger icon
+hamburgerIcon.addEventListener('click', openMobileMenu);
+
+// Event listener for clicking the close icon
+closeMenuIcon.addEventListener('click', closeMobileMenu);
+
+// Event listener for clicking outside the mobile menu to close it
+modalBg.addEventListener('click', closeMobileMenu);
+
+// Use the if else statement here
