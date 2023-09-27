@@ -609,8 +609,8 @@ p.remained-amount {
   }
 
   .mobile-menu {
-    width: 80%;
-    height: 42%;
+    width: 60%;
+    height: 35%;
     top: 33%;
     left: 50%;
   }
@@ -627,6 +627,16 @@ p.remained-amount {
     display: none;
   }
 }
+
+
+/****** Styles for screens larger than 1024px ******/
+@media screen and (min-width: 1025px) {
+  /* Hide the hamburger icon container */
+  .hamburger-container {
+    display: none;
+  }
+}
+
 
 /***** Desktop display larger than 1440 px wide *****/
 
