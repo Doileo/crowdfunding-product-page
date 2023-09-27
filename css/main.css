@@ -843,8 +843,13 @@ p.remained-amount {
     left: 580px;
   }
 
+  .success {
+    z-index: 99;
+  }
+
   .success-container {
     width: 540px;
+    height: 449px;
   }
 
   .success-container img {
