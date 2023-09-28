@@ -422,6 +422,12 @@ span.text-gray {
   padding: 1.5rem;
 }
 
+.selected-card.card-no-reward,
+.selected-card.second-pledge-modal-card,
+.selected-card.third-pledge-modal-card {
+  border-color: #3CB3AB;
+}
+
 .card-no-reward label,
 .second-pledge-modal-card label,
 .third-pledge-modal-card label,
@@ -450,6 +456,10 @@ span.text-gray {
   border: 1px solid rgba(0, 0, 0, 0.14);
   border-radius: 50%;
   margin-top: 0.2rem;
+}
+
+.selected-card input[type="radio"] {
+  background-color: #3CB3AB;
 }
 
 .selected-pledge {
